@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volumen_Potencial_mayor_que_cero</fullName>
+    <active>true</active>
+    <errorConditionFormula>auara_VolumenPotencial__c &lt; 0</errorConditionFormula>
+    <errorDisplayField>auara_VolumenPotencial__c</errorDisplayField>
+    <errorMessage>El volumen potencial siempre debe de ser igual o mayor que cero</errorMessage>
+</ValidationRule>

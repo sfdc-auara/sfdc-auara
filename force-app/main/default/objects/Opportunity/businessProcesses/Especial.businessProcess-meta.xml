@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Especial</fullName>
+    <description>Proceso avanzado de venta para oportunidades mas complejas</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Calificación</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cerrada ganada</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cerrada perdida</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Esperando Aprobación</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Fijar Precio</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Propuesta de valor</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Tramitar Cierre</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>auara_CompetenciaAgua__c</fullName>
+    <externalId>false</externalId>
+    <label>Competencia Agua</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aguaencaja</fullName>
+                <default>false</default>
+                <label>Aguaencaja</label>
+            </value>
+            <value>
+                <fullName>Aquabona</fullName>
+                <default>false</default>
+                <label>Aquabona</label>
+            </value>
+            <value>
+                <fullName>Aquafina</fullName>
+                <default>false</default>
+                <label>Aquafina</label>
+            </value>
+            <value>
+                <fullName>Aquarel</fullName>
+                <default>false</default>
+                <label>Aquarel</label>
+            </value>
+            <value>
+                <fullName>Bezoya</fullName>
+                <default>false</default>
+                <label>Bezoya</label>
+            </value>
+            <value>
+                <fullName>Cabreiroa</fullName>
+                <default>false</default>
+                <label>Cabreiroa</label>
+            </value>
+            <value>
+                <fullName>Evian</fullName>
+                <default>false</default>
+                <label>Evian</label>
+            </value>
+            <value>
+                <fullName>Fontvella</fullName>
+                <default>false</default>
+                <label>Fontvella</label>
+            </value>
+            <value>
+                <fullName>Fuente liviana</fullName>
+                <default>false</default>
+                <label>Fuente liviana</label>
+            </value>
+            <value>
+                <fullName>Lanjarón</fullName>
+                <default>false</default>
+                <label>Lanjarón</label>
+            </value>
+            <value>
+                <fullName>Solan de cabras</fullName>
+                <default>false</default>
+                <label>Solan de cabras</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
