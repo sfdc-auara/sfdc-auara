@@ -1,3 +1,4 @@
+# .forceignore v2
 # List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
 # More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
 #
@@ -10,3 +11,11 @@ package.xml
 
 # LWC Jest
 **/__tests__/**
+
+# AUARA
+force-app/main/default/translations/*
+force-app/main/default/profiles/Admin*
+force-app/main/default/appMenus/*
+force-app/main/default/profilePasswordPolicies
+force-app/main/default/profileSessionSettings
+
