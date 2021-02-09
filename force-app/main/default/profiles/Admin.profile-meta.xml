@@ -123,6 +123,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.auara_Distribuidor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.auara_Fit__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -141,8 +146,16 @@
         <field>Account.auara_VolumenPotencial__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.aura_Vertical__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Formato de cuentas</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Formato de contactos</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Formato de oportunidades</layout>
@@ -154,6 +167,9 @@
     <layoutAssignments>
         <layout>Opportunity-Formato de oportunidades</layout>
         <recordType>Opportunity.auara_Estandar</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Formato de productos</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
@@ -618,6 +634,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageRoles</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageSandboxes</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

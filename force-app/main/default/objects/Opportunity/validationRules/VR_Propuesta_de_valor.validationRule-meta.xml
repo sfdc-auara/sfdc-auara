@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Propuesta_de_valor</fullName>
+    <active>true</active>
+    <description>Validation rule para poder cambiar de Cualificación a Propuesta de Valor</description>
+    <errorConditionFormula>ISBLANK(ContactId) &amp;&amp;  ISPICKVAL(StageName, &quot;Propuesta de valor&quot;)</errorConditionFormula>
+    <errorMessage>Debe haber al menos un contacto con rol &quot;Responsable de la decisión&quot; para poder cambiar de etapa la oportunidad.</errorMessage>
+</ValidationRule>

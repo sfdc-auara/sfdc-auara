@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animationFrequency>always</animationFrequency>
+    <developerName>auara_OpportunityEspecial</developerName>
+    <isActive>true</isActive>
+    <masterLabel>Opportunity Especial</masterLabel>
+    <recordTypeContext>Custom</recordTypeContext>
+    <recordTypeName>auara_Especial</recordTypeName>
+    <sobjectType>Opportunity</sobjectType>
+    <targetField>StageName</targetField>
+    <targetFieldChangeToValues>Cerrada ganada</targetFieldChangeToValues>
+</AnimationRule>

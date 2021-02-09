@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>aura_Vertical__c</fullName>
+    <externalId>false</externalId>
+    <label>Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AT</fullName>
+                <default>false</default>
+                <label>AT</label>
+            </value>
+            <value>
+                <fullName>Colectividades</fullName>
+                <default>false</default>
+                <label>Colectividades</label>
+            </value>
+            <value>
+                <fullName>Corporativo</fullName>
+                <default>false</default>
+                <label>Corporativo</label>
+            </value>
+            <value>
+                <fullName>Corporativo Regional</fullName>
+                <default>false</default>
+                <label>Corporativo Regional</label>
+            </value>
+            <value>
+                <fullName>DM</fullName>
+                <default>false</default>
+                <label>DM</label>
+            </value>
+            <value>
+                <fullName>HH</fullName>
+                <default>false</default>
+                <label>HH</label>
+            </value>
+            <value>
+                <fullName>HO</fullName>
+                <default>false</default>
+                <label>HO</label>
+            </value>
+            <value>
+                <fullName>Hostelería independiente</fullName>
+                <default>false</default>
+                <label>Hostelería independiente</label>
+            </value>
+            <value>
+                <fullName>Vending</fullName>
+                <default>false</default>
+                <label>Vending</label>
+            </value>
+            <value>
+                <fullName>Vending regional</fullName>
+                <default>false</default>
+                <label>Vending regional</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -26,6 +26,11 @@
                 <componentName>force:highlightsPanel</componentName>
             </componentInstance>
         </itemInstances>
+        <mode>Replace</mode>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -40,7 +45,7 @@
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
-        <name>header</name>
+        <name>subheader</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -49,20 +54,10 @@
                 <componentName>force:detailPanel</componentName>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
-        <name>detailTabContent</name>
+        <name>Facet-48066790-7768-4500-8c2f-e01345a4177f</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>displayOption</name>
-                    <value>BOTH</value>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_merge:mergeCandidatesPreviewCard</componentName>
-            </componentInstance>
-        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -80,8 +75,7 @@
                 <componentName>force:relatedListContainer</componentName>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
-        <name>relatedTabContent</name>
+        <name>Facet-1c6e60e7-7843-4cbf-8f6b-163753f4d6f1</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -93,7 +87,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>detailTabContent</value>
+                    <value>Facet-48066790-7768-4500-8c2f-e01345a4177f</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
@@ -110,7 +104,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>relatedTabContent</value>
+                    <value>Facet-1c6e60e7-7843-4cbf-8f6b-163753f4d6f1</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
@@ -119,8 +113,7 @@
                 <componentName>flexipage:tab</componentName>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
-        <name>maintabs</name>
+        <name>Facet-9cf2d8d4-cfb2-48e3-a1c9-c23c65121124</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -128,7 +121,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>tabs</name>
-                    <value>maintabs</value>
+                    <value>Facet-9cf2d8d4-cfb2-48e3-a1c9-c23c65121124</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
             </componentInstance>
@@ -189,7 +182,7 @@
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
-        <name>sidebartabs</name>
+        <name>tabs</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -197,7 +190,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>tabs</name>
-                    <value>sidebartabs</value>
+                    <value>tabs</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
             </componentInstance>
@@ -206,11 +199,11 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Account Record Page</masterLabel>
-    <parentFlexiPage>sfa__Account_rec_L</parentFlexiPage>
-    <sobjectType>Account</sobjectType>
+    <masterLabel>Opportunity Record Page</masterLabel>
+    <parentFlexiPage>sfa__Opportunity_rec_L</parentFlexiPage>
+    <sobjectType>Opportunity</sobjectType>
     <template>
-        <name>flexipage:recordHomeTemplateDesktop</name>
+        <name>flexipage:recordHomeWithSubheaderTemplateDesktop</name>
     </template>
     <type>RecordPage</type>
 </FlexiPage>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Opportunity Especial</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;p&gt;Para pasar a la siguiente etapa será necesario asignar como &lt;u&gt;primario&lt;/u&gt; a un contacto con role de &lt;b&gt;Responsable de la decisión&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Calificación</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Recuerda adjuntar una evidencia de que se ha aceptado la oportunidad por parte del cliente&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Esperando Aprobación</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Recuerda añadir los productos y revisar el precio para poder enviar la oportunidad a Aprobación&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Fijar Precio</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Recuerda adjuntar el documento con la propuesta de valor para poder pasar a la siguiente etapa&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Propuesta de valor</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>auara_Especial</recordTypeName>
+</PathAssistant>
