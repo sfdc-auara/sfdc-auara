@@ -151,6 +151,76 @@
         <field>Account.aura_Vertical__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Recorrido__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.auara_Canal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.auara_Forma__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.auara_Motivo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.auara_Participantes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Recorrido__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.auara_Canal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.auara_Forma__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.auara_Motivo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.auara_Participantes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <layoutAssignments>
+        <layout>Event-Formato de Beef</layout>
+        <recordType>Event.auara_Beef</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Formato de Conexión</layout>
+        <recordType>Event.auara_Conexion</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Formato de Llamada</layout>
+        <recordType>Event.auara_Llamada</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Formato de Reunión</layout>
+        <recordType>Event.auara_Reunion</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Formato de Visita</layout>
+        <recordType>Event.auara_Visita</recordType>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Formato de oportunidades</layout>
         <recordType>Opportunity.auara_Especial</recordType>
@@ -159,6 +229,31 @@
         <layout>Opportunity-Formato de oportunidades</layout>
         <recordType>Opportunity.auara_Estandar</recordType>
     </layoutAssignments>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.auara_Beef</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.auara_Conexion</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.auara_Llamada</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.auara_Reunion</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.auara_Visita</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.auara_Especial</recordType>
