@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-card_boundary">
+        <lightning-card title="My Daily Commitments" icon-name="standard:work_order_item">
+            <lightning-input type="date" slot="actions" value={commitmentsDate} onchange={handleOnDateChange}></lightning-input>
+            <lightning-button label="Save" slot="footer" onclick={handleOnSave}></lightning-button>
+
+            <c-counter oncounterchange={handleVisitsChange} label="Visits:" counter-value={commitmentsVisit} increment-value=1>
+            </c-counter>
+            <c-counter oncounterchange={handleMeetingsChange} label="Meetings:" counter-value={commitmentsMeeting} increment-value=1>
+            </c-counter>
+            <c-counter oncounterchange={handleBeefsChange} label="Beefs:" counter-value={commitmentsBeef} increment-value=1>
+            </c-counter>
+        </lightning-card>
+    </div>
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used by Dependency Injection Pattern to register all those FieldSets SObjects that will be used by the different Selector classes</description>
+    <label>SObject FieldSet Inclusion</label>
+    <pluralLabel>SObject FieldSet Inclusions</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -201,6 +201,21 @@
         <field>Task.auara_Participantes__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>auara_DailyCommitment__c.auara_CommitmentForBeefs__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>auara_DailyCommitment__c.auara_CommitmentForMeetings__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>auara_DailyCommitment__c.auara_CommitmentForVisits__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Event-Formato de Beef</layout>
         <recordType>Event.auara_Beef</recordType>
@@ -228,6 +243,9 @@
     <layoutAssignments>
         <layout>Opportunity-Formato de oportunidades</layout>
         <recordType>Opportunity.auara_Estandar</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>auara_DailyCommitment__c-Daily Commitment Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>

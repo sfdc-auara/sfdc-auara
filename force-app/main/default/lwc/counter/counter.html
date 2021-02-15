@@ -1,0 +1,27 @@
+<template>
+	<div class="slds-m-around_medium">
+		<lightning-layout pull-to-boundary="medium">
+			<lightning-layout-item size="2" padding="horizontal-medium"></lightning-layout-item>
+			<lightning-layout-item size="3" padding="horizontal-medium">
+				<label class="slds-form-element__label slds-m-right_none" for="counter">{label}</label>
+			</lightning-layout-item>
+			<lightning-layout-item size="4" padding="horizontal-medium">
+				<div class="slds-form-element__control">
+					<button class="slds-button slds-button_icon slds-button_icon-small button_decrement" title="Decrement counter"
+						onclick={handleDecrement}>
+						<lightning-icon icon-name="utility:ban" alternative-text="Decrement counter" title="Decrement counter"
+							size="small" variant="error"></lightning-icon>
+						<span class="slds-assistive-text">Decrement counter</span>
+					</button>
+					<input type="number" id="counter" class="slds-input slds-input_counter" value={counterValue} />
+					<button class="slds-button slds-button_icon slds-button_icon-small button_increment" title="Increment counter"
+						onclick={handleIncrement}>
+						<lightning-icon icon-name="utility:new" alternative-text="Increment counter" title="Increment counter"
+							size="small" variant="success"></lightning-icon>
+						<span class="slds-assistive-text">Increment counter</span>
+					</button>
+				</div>
+			</lightning-layout-item>
+		</lightning-layout>
+	</div>
+</template>

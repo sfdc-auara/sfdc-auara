@@ -28,6 +28,11 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>commitmentCounter</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentName>runtime_sales_activities:todayTaskContainer</componentName>
             </componentInstance>
         </itemInstances>
