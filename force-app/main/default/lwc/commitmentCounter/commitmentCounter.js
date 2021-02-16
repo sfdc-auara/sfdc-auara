@@ -2,7 +2,6 @@ import { LightningElement, api } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import getDailyCommitment from '@salesforce/apex/Auara_commitmentCounterCtrl.getDailyCommitment';
 import setDailyCommitment from '@salesforce/apex/Auara_commitmentCounterCtrl.setDailyCommitment';
-import PermissionsSubscribeToLightningDashboards from '@salesforce/schema/PermissionSet.PermissionsSubscribeToLightningDashboards';
 
 export default class CommitmentCounter extends LightningElement {
   @api commitmentsDate = new Date();
@@ -50,7 +49,7 @@ export default class CommitmentCounter extends LightningElement {
         }
       })
       .catch(error => {
-        this.error = error;
+        console.log(error);
       });
   }
 
@@ -74,7 +73,7 @@ export default class CommitmentCounter extends LightningElement {
         }
       })
       .catch(error => {
-        this.error = error;
+        console.log(error);
       });
   }
 }

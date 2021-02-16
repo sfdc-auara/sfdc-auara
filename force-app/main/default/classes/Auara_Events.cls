@@ -1,30 +1,30 @@
 /**
-  * This is a basic selector for Daily Commitments
+  * This is a basic selector for Events
   **/
 
-public with sharing class Auara_DailyCommitments extends fflib_SObjectDomain implements Auara_DailyCommitmentsI {
+public with sharing class Auara_Events extends fflib_SObjectDomain implements Auara_EventsI {
 
-    public static Auara_DailyCommitmentsI newInstance(List<auara_DailyCommitment__c> sObjectList){
-        return (Auara_DailyCommitmentsI) Auara_Application.DOMAIN.newInstance(sObjectList);
+    public static Auara_EventsI newInstance(List<event> sObjectList){
+        return (Auara_EventsI) Auara_Application.DOMAIN.newInstance(sObjectList);
     }
 
-    public Auara_DailyCommitments(List<auara_DailyCommitment__c> sObjectList){
+    public Auara_Events(List<event> sObjectList){
         super(sObjectList);
     }
 
-    public List<auara_DailyCommitment__c> upsertCommitment(){
-        Set<auara_DailyCommitment__c> setOfCommitments = new Set<auara_DailyCommitment__c>();
+    public List<event> rateEvents(string rating){
+        Set<event> setOfEvents = new Set<event>();
         fflib_ISObjectUnitOfWork uow = Auara_Application.UNITOFWORK.newInstance();
-        Auara_UOWUpsertCommitment upsertWork = new Auara_UOWUpsertCommitment();
 
-        for(auara_DailyCommitment__c myCommitment : (List<auara_DailyCommitment__c>) Records) {
-            uow.registerWork(upsertWork);
-            upsertWork.registerCommitmentUpsert(myCommitment);
-            setOfCommitments.add(myCommitment);
+        for(event myEvent : (List<event>) Records) {
+            myEvent.auara_InteresComplicidad__c = rating;
+            uow.registerDirty(myEvent);
+            setOfEvents.add(myEvent);
         }
 
         uow.commitWork();
-        return new List<auara_DailyCommitment__c>(setOfCommitments);
+        return new List<event>(setOfEvents);
+
     }
 
     /* DOMAIN MODEL PATTERN - Triggers
@@ -34,7 +34,7 @@ public with sharing class Auara_DailyCommitments extends fflib_SObjectDomain imp
       */
     public class Constructor implements fflib_SObjectDomain.IConstructable {
         public fflib_SObjectDomain construct(List<SObject> sObjectList){
-            return new Auara_DailyCommitments(sObjectList);
+            return new Auara_Events(sObjectList);
         }
 
     }
