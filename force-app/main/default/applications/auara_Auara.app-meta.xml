@@ -19,14 +19,6 @@
         <pageOrSobjectType>Account</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Tab</actionName>
-        <content>Home_Page_Default1</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Opportunity_Record_Page1</content>
@@ -61,6 +53,24 @@
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>Contact</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Event_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Event</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Event_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Event</pageOrSobjectType>
     </actionOverrides>
     <brand>
         <headerColor>#00ADAE</headerColor>
@@ -74,7 +84,7 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Auara</label>
     <navType>Standard</navType>
-    <tabs>standard-home</tabs>
+    <tabs>Auara_Central</tabs>
     <tabs>standard-Event</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Opportunity</tabs>
