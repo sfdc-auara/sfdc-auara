@@ -16,7 +16,7 @@ public with sharing class Auara_UOWUpsertCommitment implements fflib_SObjectUnit
     }
 
     public void doWork(){
-        Schema.SObjectField keyField = auara_DailyCommitment__c.Fields.Auara_RecordKey__c;
+        Schema.SObjectField keyField = auara_DailyCommitment__c.Fields.auara_id__c;
         results = Database.upsert(mRecords, keyField, false);
     }
 

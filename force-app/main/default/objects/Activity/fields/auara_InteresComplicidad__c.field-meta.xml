@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Recorrido__c</fullName>
+    <fullName>auara_InteresComplicidad__c</fullName>
+    <defaultValue>TEXT(0)</defaultValue>
+    <description>Muestra el interes o la complicidad sobre la oportunidad por parte del cliente</description>
     <externalId>false</externalId>
-    <label>Recorrido</label>
+    <label>Interés / Complicidad</label>
     <required>false</required>
     <type>Picklist</type>
     <valueSet>
@@ -10,29 +12,29 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>0 - Fallido (0-2 mins)</fullName>
+                <fullName>0</fullName>
                 <default>false</default>
-                <label>0 - Fallido (0-2 mins)</label>
+                <label>0</label>
             </value>
             <value>
-                <fullName>1 - Presentación personal (2-5mins)</fullName>
+                <fullName>1</fullName>
                 <default>false</default>
-                <label>1 - Presentación personal (2-5mins)</label>
+                <label>1</label>
             </value>
             <value>
-                <fullName>2 - Presentación comercial (5-10mins)</fullName>
+                <fullName>2</fullName>
                 <default>false</default>
-                <label>2 - Presentación comercial (5-10mins)</label>
+                <label>2</label>
             </value>
             <value>
-                <fullName>3 - Interacción profunda (10-30mins)</fullName>
+                <fullName>3</fullName>
                 <default>false</default>
-                <label>3 - Interacción profunda (10-30mins)</label>
+                <label>3</label>
             </value>
             <value>
-                <fullName>4 - Interacción detallada (&gt;30mins)</fullName>
+                <fullName>4</fullName>
                 <default>false</default>
-                <label>4 - Interacción detallada (&gt;30mins)</label>
+                <label>4</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -33,6 +33,11 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>starRatings4Events</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentName>force:detailPanel</componentName>
             </componentInstance>
         </itemInstances>
@@ -98,11 +103,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>starRatings4Events</componentName>
-            </componentInstance>
-        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

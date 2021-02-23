@@ -2,12 +2,6 @@
     <div class="slds-card_boundary">
         <lightning-card title="My Daily Commitments" icon-name="standard:work_order_item">
             <lightning-button label="Save" slot="footer" onclick={handleOnSave}></lightning-button>
-            <lightning-layout>
-                <lightning-layout-item alignment-bump="left" padding="around-small">
-                    <lightning-input class="slds-float_right" type="date" value={commitmentsDate}
-                        onchange={handleOnDateChange}></lightning-input>
-                </lightning-layout-item>
-            </lightning-layout>
 
             <c-counter oncounterchange={handleVisitsChange} label="Visits:" counter-value={commitmentsVisit}
                 increment-value=1>

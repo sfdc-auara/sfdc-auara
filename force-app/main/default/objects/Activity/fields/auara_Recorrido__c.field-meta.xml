@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>auara_Recorrido__c</fullName>
+    <description>Description</description>
+    <externalId>false</externalId>
+    <label>Recorrido</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 - Fallido (0-2 mins)</fullName>
+                <default>false</default>
+                <label>0 - Fallido (0-2 mins)</label>
+            </value>
+            <value>
+                <fullName>1 - Presentación personal (2-5mins)</fullName>
+                <default>false</default>
+                <label>1 - Presentación personal (2-5mins)</label>
+            </value>
+            <value>
+                <fullName>2 - Presentación comercial (5-10mins)</fullName>
+                <default>false</default>
+                <label>2 - Presentación comercial (5-10mins)</label>
+            </value>
+            <value>
+                <fullName>3 - Interacción profunda (10-30mins)</fullName>
+                <default>false</default>
+                <label>3 - Interacción profunda (10-30mins)</label>
+            </value>
+            <value>
+                <fullName>4 - Interacción detallada (&gt;30mins)</fullName>
+                <default>false</default>
+                <label>4 - Interacción detallada (&gt;30mins)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
