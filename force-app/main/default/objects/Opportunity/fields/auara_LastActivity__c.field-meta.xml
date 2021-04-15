@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>auara_LastActivity__c</fullName>
+    <description>The date when a User last did something related to the record (represents one of the following):
+  - The latest Due Date of the Closed Tasks on a record. 
+  - The latest Start Date of Events on a record.
+
+Example: If a Record has multiple Activities, the &quot;Last Activity&quot; date will be the Due Date of the Activity furthest in the future. If the Activity Due Dates are 1/10/2018 and 2/10/2018, the Last Activity will be 2/10/2018.</description>
+    <externalId>false</externalId>
+    <formula>LastActivityDate</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Activity</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

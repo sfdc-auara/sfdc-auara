@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Esperando_Aprobacion</fullName>
+    <active>true</active>
+    <description>Valida que el campo Amount de la oportunidad esté relleno (se hayan añadido productos) para poder pasar a este estado</description>
+    <errorConditionFormula>AND(ISBLANK(Amount), ISPICKVAL(StageName,&apos;Esperando Aprobación&apos;))</errorConditionFormula>
+    <errorDisplayField>Amount</errorDisplayField>
+    <errorMessage>Debe haberse fijado un precio en la oportunidad para poder enviarla a aprobación</errorMessage>
+</ValidationRule>

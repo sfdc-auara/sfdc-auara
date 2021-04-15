@@ -32,7 +32,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Recorrido__c</field>
+                <field>auara_Recorrido__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>auara_EstadoCuenta__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

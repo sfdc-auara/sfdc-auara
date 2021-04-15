@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>auara_LiteralCategoria__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( auara_VolumenPotencial__c &gt; 100, &quot;GOLD&quot;,
+    IF ( auara_VolumenPotencial__c &gt; 50, &quot;SILVER&quot;,
+        &quot;BRONZE&quot;)
+		)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Literal Categoria</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

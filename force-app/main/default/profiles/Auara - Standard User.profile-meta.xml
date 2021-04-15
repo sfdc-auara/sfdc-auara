@@ -421,6 +421,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.auara_LiteralCategoria__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.auara_NegociacionEspecial__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -436,7 +441,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.auara_id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.aura_Vertical__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.auara_id__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -467,6 +482,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Event.auara_Recorrido__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.auara_id__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -512,6 +532,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>auara_DailyCommitment__c.auara_CommitmentForVisits__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>auara_DailyCommitment__c.auara_id__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <layoutAssignments>

@@ -2,30 +2,14 @@
   * This is a basic selector for Events
   **/
 
-public with sharing class Auara_Events extends fflib_SObjectDomain implements Auara_EventsI {
+public with sharing class Auara_Accounts extends fflib_SObjectDomain implements Auara_AccountsI {
 
-    Auara_EventsHelper helper = new Auara_EventsHelper();
-    public static Auara_EventsI newInstance(List<event> sObjectList){
-        return (Auara_EventsI) Auara_Application.DOMAIN.newInstance(sObjectList);
+    public static Auara_AccountsI newInstance(List<Account> sObjectList){
+        return (Auara_AccountsI) Auara_Application.DOMAIN.newInstance(sObjectList);
     }
 
-    public Auara_Events(List<event> sObjectList){
+    public Auara_Accounts(List<Account> sObjectList){
         super(sObjectList);
-    }
-
-    public List<event> rateEvents(string rating){
-        Set<event> setOfEvents = new Set<event>();
-        fflib_ISObjectUnitOfWork uow = Auara_Application.UNITOFWORK.newInstance();
-
-        for(event myEvent : (List<event>) Records) {
-            myEvent.auara_InteresComplicidad__c = rating;
-            uow.registerDirty(myEvent);
-            setOfEvents.add(myEvent);
-        }
-
-        uow.commitWork();
-        return new List<event>(setOfEvents);
-
     }
 
     /* DOMAIN MODEL PATTERN - Triggers
@@ -35,7 +19,7 @@ public with sharing class Auara_Events extends fflib_SObjectDomain implements Au
       */
     public class Constructor implements fflib_SObjectDomain.IConstructable {
         public fflib_SObjectDomain construct(List<SObject> sObjectList){
-            return new Auara_Events(sObjectList);
+            return new Auara_Accounts(sObjectList);
         }
 
     }
@@ -46,11 +30,9 @@ public with sharing class Auara_Events extends fflib_SObjectDomain implements Au
       * Placing logic here ensures that defaulting occurs consistently across the application when records are added.
       * You can also call it explicitly, if needed, from a service that helps present default record values to a user
       * accessing a custom UI via a Visualforce page or Lightning component, for example.
-      */
 
-    public override void onApplyDefaults(){
-      helper.uodateAccountStatus((List<Event>) records);
-    }
+        public override void onApplyDefaults(){}
+      */
 
     /* DOMAIN MODEL PATTERN - Validation Logic
       * Although you can override any of the trigger methods to implement validation logic, it’s platform best practice to do this

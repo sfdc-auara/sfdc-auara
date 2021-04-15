@@ -11,15 +11,15 @@
         <picklistValueName>Calificación</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
-        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Recuerda adjuntar una evidencia de que se ha aceptado la oportunidad por parte del cliente&lt;/span&gt;&lt;/p&gt;</info>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Recuerda &lt;/span&gt;&lt;b style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;adjuntar una evidencia&lt;/b&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt; de que se ha aceptado la oportunidad por parte del cliente&lt;/span&gt;&lt;/p&gt;</info>
         <picklistValueName>Esperando Aprobación</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
-        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Recuerda añadir los productos y revisar el precio para poder enviar la oportunidad a Aprobación&lt;/span&gt;&lt;/p&gt;</info>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Recuerda &lt;/span&gt;&lt;b style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;añadir los productos y revisar el precio&lt;/b&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt; para poder enviar la oportunidad a Aprobación&lt;/span&gt;&lt;/p&gt;</info>
         <picklistValueName>Fijar Precio</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
-        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Recuerda adjuntar el documento con la propuesta de valor para poder pasar a la siguiente etapa&lt;/span&gt;&lt;/p&gt;</info>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Recuerda &lt;/span&gt;&lt;b style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;adjuntar el documento con la propuesta de valor&lt;/b&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt; para poder pasar a la siguiente etapa&lt;/span&gt;&lt;/p&gt;</info>
         <picklistValueName>Propuesta de valor</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>auara_Especial</recordTypeName>
