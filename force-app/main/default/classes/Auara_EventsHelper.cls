@@ -1,5 +1,5 @@
 public with sharing class Auara_EventsHelper {
-    public void uodateAccountStatus(List <Event> records){
+    public void applyDefaults(List <Event> records){
 
         // Get the List of Accounts  associated to the Events to process
         set<id> setLookup = new set<id>();

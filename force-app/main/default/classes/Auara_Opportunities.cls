@@ -1,19 +1,16 @@
 /**
-  * This is a basic selector for Daily Commitments
+  * This is a basic Domain for Opportunities
   **/
 
-public with sharing class Auara_DailyCommitments extends fflib_SObjectDomain implements Auara_DailyCommitmentsI {
-    Auara_DailyCommitmentsHelper helper = new Auara_DailyCommitmentsHelper();
-    public static Auara_DailyCommitmentsI newInstance(List<auara_DailyCommitment__c> sObjectList){
-        return (Auara_DailyCommitmentsI) Auara_Application.DOMAIN.newInstance(sObjectList);
+  public with sharing class Auara_Opportunities extends fflib_SObjectDomain implements Auara_OpportunitiesI {
+
+    Auara_OpportunitiesHelper helper = new Auara_OpportunitiesHelper();
+    public static Auara_OpportunitiesI newInstance(List<Opportunity> sObjectList){
+        return (Auara_OpportunitiesI) Auara_Application.DOMAIN.newInstance(sObjectList);
     }
 
-    public Auara_DailyCommitments(List<auara_DailyCommitment__c> sObjectList){
+    public Auara_Opportunities(List<Opportunity> sObjectList){
         super(sObjectList);
-    }
-
-    public List<auara_DailyCommitment__c> upsertCommitment(){
-      return helper.upsertCommitment((List<auara_DailyCommitment__c>) Records);
     }
 
     /* DOMAIN MODEL PATTERN - Triggers
@@ -23,7 +20,7 @@ public with sharing class Auara_DailyCommitments extends fflib_SObjectDomain imp
       */
     public class Constructor implements fflib_SObjectDomain.IConstructable {
         public fflib_SObjectDomain construct(List<SObject> sObjectList){
-            return new Auara_DailyCommitments(sObjectList);
+            return new Auara_Opportunities(sObjectList);
         }
 
     }
@@ -34,10 +31,10 @@ public with sharing class Auara_DailyCommitments extends fflib_SObjectDomain imp
       * Placing logic here ensures that defaulting occurs consistently across the application when records are added.
       * You can also call it explicitly, if needed, from a service that helps present default record values to a user
       * accessing a custom UI via a Visualforce page or Lightning component, for example.
-
-       public override void onApplyDefaults() {
-       }
       */
+      public override void onApplyDefaults(){
+        helper.applyDefaults((List<Opportunity>) records);
+      }
 
     /* DOMAIN MODEL PATTERN - Validation Logic
       * Although you can override any of the trigger methods to implement validation logic, it’s platform best practice to do this

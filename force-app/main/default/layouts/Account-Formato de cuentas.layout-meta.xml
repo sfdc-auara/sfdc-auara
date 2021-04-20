@@ -66,6 +66,10 @@
                 <behavior>Readonly</behavior>
                 <field>auara_LastActivity__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>auara_DisqualifyReason__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

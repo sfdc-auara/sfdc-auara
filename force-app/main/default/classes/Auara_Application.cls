@@ -8,6 +8,7 @@ public with sharing class Auara_Application {
         new fflib_Application.UnitOfWorkFactory(
         new List<SObjectType> {
         account.SObjectType,
+        opportunity.SObjectType,
         auara_DailyCommitment__c.SObjectType,
         event.SObjectType
 });
@@ -23,6 +24,7 @@ public with sharing class Auara_Application {
         new fflib_Application.SelectorFactory(
         new Map<SObjectType, Type> {
         account.SObjectType => Auara_AccountsSelector.class,
+        opportunity.SObjectType => Auara_OpportunitiesSelector.class,
         auara_DailyCommitment__c.SObjectType => Auara_DailyCommitmentsSelector.class,
         event.SObjectType => Auara_EventsSelector.class
 });
@@ -32,9 +34,10 @@ public with sharing class Auara_Application {
         new fflib_Application.DomainFactory(
         Auara_Application.SELECTOR,
         new Map<SObjectType, Type> {
-        account.SObjectType => Auara_Accounts.constructr.class,
+        account.SObjectType => Auara_Accounts.constructor.class,
+        opportunity.SObjectType => Auara_Opportunities.constructor.class,
         auara_DailyCommitment__c.SObjectType => Auara_DailyCommitments.constructor.class,
-        event.SObjectType => Auara_Events.constructr.class
+        event.SObjectType => Auara_Events.constructor.class
 
 });
 

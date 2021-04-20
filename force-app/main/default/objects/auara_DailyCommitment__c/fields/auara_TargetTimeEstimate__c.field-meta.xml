@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>auara_TargetTimeEstimate__c</fullName>
+    <externalId>false</externalId>
+    <formula>( auara_CommitmentForVisits__c +  $Setup.auara_UmbralesCompromiso__c.auara_TargetVisitas__c ) +
+( auara_CommitmentForMeetings__c +  $Setup.auara_UmbralesCompromiso__c.auara_TargetReuniones__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Target Time Estimate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

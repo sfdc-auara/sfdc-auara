@@ -49,7 +49,7 @@ public with sharing class Auara_Events extends fflib_SObjectDomain implements Au
       */
 
     public override void onApplyDefaults(){
-      helper.uodateAccountStatus((List<Event>) records);
+      helper.applyDefaults((List<Event>) records);
     }
 
     /* DOMAIN MODEL PATTERN - Validation Logic

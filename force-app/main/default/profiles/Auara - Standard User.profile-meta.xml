@@ -6,6 +6,22 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>Auara_Accounts</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Auara_AccountsI</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Auara_AccountsSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Auara_AccountsSelectorI</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Auara_Application</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -34,6 +50,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Auara_EventsHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Auara_EventsI</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -43,6 +63,26 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Auara_EventsSelectorI</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Auara_Opportunities</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Auara_OpportunitiesHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Auara_OpportunitiesI</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Auara_OpportunitiesSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Auara_OpportunitiesSelectorI</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -411,12 +451,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.auara_DisqualifyReason__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.auara_Distribuidor__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.auara_Fit__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.auara_LastActivity__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -460,6 +510,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.auara_EstadoCuenta__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Event.auara_Forma__c</field>
         <readable>true</readable>
@@ -486,6 +541,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.auara_LastActivity__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.auara_id__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -493,6 +553,11 @@
         <editable>true</editable>
         <field>Task.auara_Canal__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.auara_EstadoCuenta__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -532,6 +597,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>auara_DailyCommitment__c.auara_CommitmentForVisits__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>auara_DailyCommitment__c.auara_TargetTimeEstimate__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>auara_DailyCommitment__c.auara_TimeEstimate__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

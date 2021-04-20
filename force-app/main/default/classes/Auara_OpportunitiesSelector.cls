@@ -1,20 +1,20 @@
-global with sharing class Auara_AccountsSelector extends fflib_SObjectSelector implements Auara_AccountsSelectorI {
+global with sharing class Auara_OpportunitiesSelector extends fflib_SObjectSelector implements Auara_OpportunitiesSelectorI {
 
-    public static Auara_AccountsSelectorI newInstance(){
-        return (Auara_AccountsSelectorI) Auara_Application.SELECTOR.newInstance(account.SObjectType);
+    public static Auara_OpportunitiesSelectorI newInstance(){
+        return (Auara_OpportunitiesSelectorI) Auara_Application.SELECTOR.newInstance(opportunity.SObjectType);
     }
 
     /**
       * Default constructor. Reads the fields from the getSObjectFieldList() method
       **/
-    global Auara_AccountsSelector(){
+    global Auara_OpportunitiesSelector(){
         super(false);
     }
 
     /**
       * Constructor that allows a parameter to use FieldSets if True
       **/
-    public Auara_AccountsSelector(Boolean includeFieldSetFields){
+    public Auara_OpportunitiesSelector(Boolean includeFieldSetFields){
         super(includeFieldSetFields);
         this.setDefaultFieldSet(Auara_Application.DEFAULTFIELDSET);
     }
@@ -22,7 +22,7 @@ global with sharing class Auara_AccountsSelector extends fflib_SObjectSelector i
     /**
       * Constructor that allows a parameter to use the selected fieldsets
       **/
-    public Auara_AccountsSelector(List <String> fieldSetList){
+    public Auara_OpportunitiesSelector(List <String> fieldSetList){
         super(true);
         this.setFieldSetList(fieldSetList);
     }
@@ -32,17 +32,17 @@ global with sharing class Auara_AccountsSelector extends fflib_SObjectSelector i
       **/
     public override List<Schema.SObjectField> getSObjectFieldList(){
         return new List<Schema.SObjectField> {
-                   Account.Id,
-                   Account.Name
+                   Opportunity.Id,
+                   Opportunity.Name
         };
     }
 
     public override Schema.SObjectType getSObjectType(){
-        return Account.sObjectType;
+        return Opportunity.sObjectType;
     }
 
-    global List<Account> selectById(Set<ID> idSet){
-        return (List<Account>) selectSObjectsById(idSet);
+    global List<Opportunity> selectById(Set<ID> idSet){
+        return (List<Opportunity>) selectSObjectsById(idSet);
     }
 
 }

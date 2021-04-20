@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>auara_DisqualifyReason__c</fullName>
+    <description>Disqualify reason</description>
+    <externalId>false</externalId>
+    <label>Disqualify Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agua filtrada</fullName>
+                <default>false</default>
+                <label>Agua filtrada</label>
+            </value>
+            <value>
+                <fullName>Exclusividad</fullName>
+                <default>false</default>
+                <label>Exclusividad</label>
+            </value>
+            <value>
+                <fullName>Formato</fullName>
+                <default>false</default>
+                <label>Formato</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <label>Otro</label>
+            </value>
+            <value>
+                <fullName>Por Auara</fullName>
+                <default>false</default>
+                <label>Por Auara</label>
+            </value>
+            <value>
+                <fullName>Precio</fullName>
+                <default>false</default>
+                <label>Precio</label>
+            </value>
+            <value>
+                <fullName>Vidrio</fullName>
+                <default>false</default>
+                <label>Vidrio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
