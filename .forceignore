@@ -18,5 +18,6 @@ force-app/main/default/profiles/Admin*
 force-app/main/default/appMenus/*
 force-app/main/default/profilePasswordPolicies
 force-app/main/default/profileSessionSettings
-force-app/main/default/settings
+force-app/main/default/reports
+force-app/main/default/dashboards
 
